@@ -1,10 +1,11 @@
 package com.siriusxi.dp.behav.strategy.algorithms.kick;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class TornadoKick implements KickBehavior {
     @Override
     public void kick() {
-        out.println("Performing a Tornado kick! ");
+        log.info("Performing a Tornado kick! ");
     }
 }

@@ -1,18 +1,16 @@
 package com.siriusxi.dp.behav.strategy.fighters;
 
+
 import com.siriusxi.dp.behav.strategy.Fighter;
 import com.siriusxi.dp.behav.strategy.algorithms.jump.JumpBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.jump.NoJump;
-import com.siriusxi.dp.behav.strategy.algorithms.jump.NormalJump;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.NormalKick;
-import com.siriusxi.dp.behav.strategy.algorithms.kick.TornadoKick;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.NoRoll;
-import com.siriusxi.dp.behav.strategy.algorithms.roll.NormalRoll;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.RollBehavior;
+import lombok.extern.java.Log;
 
-import static java.lang.System.out;
-
+@Log
 public class EHonda extends Fighter {
     
     public EHonda() {
@@ -29,6 +27,6 @@ public class EHonda extends Fighter {
     
     @Override
     public void display() {
-        out.println("I am a Sumo \"E.Honda\"!");
+        log.info("I am a Sumo \"E.Honda\"!");
     }
 }

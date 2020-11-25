@@ -7,9 +7,10 @@ import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.TornadoKick;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.NormalRoll;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.RollBehavior;
+import lombok.extern.java.Log;
 
-import static java.lang.System.out;
 
+@Log
 public class Ken extends Fighter {
     
     public Ken() {
@@ -26,6 +27,6 @@ public class Ken extends Fighter {
     
     @Override
     public void display() {
-        out.println("I am the Master \"Ken\"!");
+        log.info("I am the Master \"Ken\"!");
     }
 }

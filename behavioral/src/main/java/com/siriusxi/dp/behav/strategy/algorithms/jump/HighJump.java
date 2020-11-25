@@ -1,10 +1,11 @@
 package com.siriusxi.dp.behav.strategy.algorithms.jump;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class HighJump implements JumpBehavior {
     @Override
     public void jump() {
-        out.println("Performing a High Jump!");
+        log.info("Performing a High Jump!");
     }
 }

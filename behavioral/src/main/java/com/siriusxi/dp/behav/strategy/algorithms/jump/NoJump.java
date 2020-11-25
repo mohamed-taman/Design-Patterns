@@ -1,10 +1,11 @@
 package com.siriusxi.dp.behav.strategy.algorithms.jump;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class NoJump implements JumpBehavior {
     @Override
     public void jump() {
-        out.println("I am not Jumping! ");
+        log.info("I am not Jumping! ");
     }
 }

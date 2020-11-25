@@ -4,27 +4,28 @@ import com.siriusxi.dp.behav.strategy.algorithms.jump.JumpBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.RollBehavior;
 
-import static java.lang.System.out;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 
 /**
- * Abstract as you must have a specific fighter
+ *  Strategy Fighter class to be implemented, as you must have a specific fighter.
  * @author Mohamed Taman
  */
+@Log
+@NoArgsConstructor
+@RequiredArgsConstructor
 public abstract class Fighter {
     
+    @NonNull
     protected JumpBehavior jumpBehavior;
+    
+    @NonNull
     protected KickBehavior kickBehavior;
+    
+    @NonNull
     protected RollBehavior rollBehavior;
-    
-    public Fighter (){}
-    
-    public Fighter(JumpBehavior jumpBehavior,
-                   KickBehavior kickBehavior,
-                   RollBehavior rollBehavior) {
-        this.jumpBehavior = jumpBehavior;
-        this.kickBehavior = kickBehavior;
-        this.rollBehavior = rollBehavior;
-    }
     
     public void setBehavior(JumpBehavior jumpBehavior) {
         this.jumpBehavior = jumpBehavior;
@@ -54,9 +55,8 @@ public abstract class Fighter {
     }
     
     public void punch(){
-        out.println("Performing a Quick punch!");
+        log.info("Performing a Quick punch!");
     }
-    
     
     public abstract void display();
 }

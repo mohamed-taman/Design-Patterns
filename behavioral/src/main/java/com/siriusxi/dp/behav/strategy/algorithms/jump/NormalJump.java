@@ -1,11 +1,12 @@
 package com.siriusxi.dp.behav.strategy.algorithms.jump;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class NormalJump implements JumpBehavior {
     
     @Override
     public void jump(){
-        out.println("Performing a Short Jump! ");
+        log.info("Performing a Short Jump! ");
     }
 }

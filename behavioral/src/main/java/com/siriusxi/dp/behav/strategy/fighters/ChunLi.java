@@ -3,15 +3,14 @@ package com.siriusxi.dp.behav.strategy.fighters;
 import com.siriusxi.dp.behav.strategy.Fighter;
 import com.siriusxi.dp.behav.strategy.algorithms.jump.HighJump;
 import com.siriusxi.dp.behav.strategy.algorithms.jump.JumpBehavior;
-import com.siriusxi.dp.behav.strategy.algorithms.jump.NormalJump;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.NormalKick;
-import com.siriusxi.dp.behav.strategy.algorithms.kick.TornadoKick;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.NormalRoll;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.RollBehavior;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class ChunLi extends Fighter {
     
     public ChunLi() {
@@ -28,6 +27,6 @@ public class ChunLi extends Fighter {
     
     @Override
     public void display() {
-        out.println("I am  \"Chun-Li\"!");
+        log.info("I am  \"Chun-Li\"!");
     }
 }

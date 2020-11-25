@@ -1,10 +1,11 @@
 package com.siriusxi.dp.behav.strategy.algorithms.roll;
 
-import static java.lang.System.out;
+import lombok.extern.java.Log;
 
+@Log
 public class NoRoll implements RollBehavior {
     @Override
     public void roll() {
-        out.println("I am not Rolling! ");
+        log.info("I am not Rolling! ");
     }
 }
