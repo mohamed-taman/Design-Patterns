@@ -7,7 +7,6 @@ import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.algorithms.kick.NormalKick;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.NormalRoll;
 import com.siriusxi.dp.behav.strategy.algorithms.roll.RollBehavior;
-
 import lombok.extern.java.Log;
 
 @Log

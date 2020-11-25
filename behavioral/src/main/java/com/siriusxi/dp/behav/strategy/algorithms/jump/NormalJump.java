@@ -6,7 +6,7 @@ import lombok.extern.java.Log;
 public class NormalJump implements JumpBehavior {
     
     @Override
-    public void jump(){
-        log.info("Performing a Short Jump! ");
+    public void jump() {
+        log.info("Performing a Short Jump!");
     }
 }

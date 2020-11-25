@@ -6,6 +6,6 @@ import lombok.extern.java.Log;
 public class NoJump implements JumpBehavior {
     @Override
     public void jump() {
-        log.info("I am not Jumping! ");
+        log.info("I am not Jumping!");
     }
 }

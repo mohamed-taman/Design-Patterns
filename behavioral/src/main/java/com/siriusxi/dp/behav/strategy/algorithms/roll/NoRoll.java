@@ -6,6 +6,6 @@ import lombok.extern.java.Log;
 public class NoRoll implements RollBehavior {
     @Override
     public void roll() {
-        log.info("I am not Rolling! ");
+        log.info("I am not Rolling!");
     }
 }

@@ -7,6 +7,6 @@ public class NormalRoll implements RollBehavior {
     
     @Override
     public void roll() {
-        log.info("Performing a rolling! ");
+        log.info("Performing a Rolling!");
     }
 }

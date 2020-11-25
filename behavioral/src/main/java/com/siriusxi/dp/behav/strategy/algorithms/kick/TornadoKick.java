@@ -6,6 +6,6 @@ import lombok.extern.java.Log;
 public class TornadoKick implements KickBehavior {
     @Override
     public void kick() {
-        log.info("Performing a Tornado kick! ");
+        log.info("Performing a Tornado Kick!");
     }
 }

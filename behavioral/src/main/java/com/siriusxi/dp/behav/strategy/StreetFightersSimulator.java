@@ -2,7 +2,9 @@ package com.siriusxi.dp.behav.strategy;
 
 import com.siriusxi.dp.behav.strategy.algorithms.jump.HighJump;
 import com.siriusxi.dp.behav.strategy.algorithms.jump.JumpBehavior;
+import com.siriusxi.dp.behav.strategy.algorithms.kick.KickBehavior;
 import com.siriusxi.dp.behav.strategy.fighters.Ken;
+import lombok.extern.java.Log;
 
 /**
  * Street Fighters game Simulator,
@@ -10,6 +12,7 @@ import com.siriusxi.dp.behav.strategy.fighters.Ken;
  *
  * @author mohamed_taman
  */
+@Log
 public class StreetFightersSimulator {
     
     public static void main(String[] args) {
@@ -31,5 +34,13 @@ public class StreetFightersSimulator {
         ken.setBehavior(highJump);
         ken.jump();
         
+        // Creating inline kick implementation
+        KickBehavior backwardKick = () -> log.info("Performing a Backward Kick!");
+        ken.setBehavior(backwardKick);
+        ken.kick();
+        
+        //Returning to normal Kick behavior
+        ken.setBehavior(KickBehavior.tornadoKick());
+        ken.kick();
     }
 }
