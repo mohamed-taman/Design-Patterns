@@ -1,0 +1,22 @@
+package com.siriusxi.dp.structural.decorator.condiment;
+
+import com.siriusxi.dp.structural.decorator.CondimentDecorator;
+import com.siriusxi.dp.structural.decorator.Drink;
+
+public class Mocha extends CondimentDecorator {
+    Drink drink;
+
+    public Mocha(Drink drink) {
+        this.drink = drink;
+    }
+
+    @Override
+    public String getIngredients() {
+        return drink.getIngredients().concat(", Mocha");
+    }
+
+    @Override
+    public double cost() {
+        return drink.cost() + .18;
+    }
+}
